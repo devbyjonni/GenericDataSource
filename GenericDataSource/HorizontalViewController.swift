@@ -33,12 +33,11 @@ class HorizontalViewController: UIViewController {
         dataSource = GenericCollectionViewDiffableDataSource(modelController: modelController, collectionView: collectionView) { (collectionView, indexPath, model) -> UICollectionViewCell? in
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MainCollectionViewCell", for: indexPath) as! MainCollectionViewCell
             cell.titleLabel.text = model.title
-            cell.contentView.backgroundColor = UIColor(displayP3Red: .random(in: .random(in: 1...1)...1), green: .random(in: 0...1), blue: .random(in: 0...1), alpha: .random(in: 0...1))
+            cell.contentView.backgroundColor = UIColor(displayP3Red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1), alpha: .random(in: 0...0.8))
             
             return cell
         }
         collectionView.dataSource = dataSource
-        dataSource.update(animatingDifferences: false)
     }
     
     @IBAction func addItem(_ sender: Any) {
