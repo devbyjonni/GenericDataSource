@@ -20,7 +20,7 @@ class HorizontalViewController: UIViewController {
         modelController.fetchData()
         configureDataSource()
         
-        let collectionViewLayout = HorizontalCompositionalLayout(itemPerRow: 6, contentInsets: 2)
+        let collectionViewLayout = HorizontalCompositionalLayout(itemsPerRow: 6, contentInsets: 2)
         collectionView.collectionViewLayout = collectionViewLayout
     }
     

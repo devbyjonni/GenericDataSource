@@ -10,14 +10,14 @@ import UIKit
 class HorizontalCompositionalLayout: UICollectionViewCompositionalLayout {
     
     private var contentInsets: CGFloat = 0.0
-    init(itemPerRow: Int, contentInsets: CGFloat = 0.0) {
+    init(itemsPerRow: Int, contentInsets: CGFloat = 0.0) {
         
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalWidth(1.0))
         
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         item.contentInsets = NSDirectionalEdgeInsets(top: contentInsets, leading: contentInsets, bottom: contentInsets, trailing: contentInsets)
         
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalHeight(1.0 / CGFloat(itemPerRow)), heightDimension: .fractionalHeight(1.0))
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalHeight(1.0 / CGFloat(itemsPerRow)), heightDimension: .fractionalHeight(1.0))
         
         let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitems: [item])
         

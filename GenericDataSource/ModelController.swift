@@ -49,14 +49,14 @@ class ModelController: ModelControllerProtocol {
         let sortDescriptorCreationDate = NSSortDescriptor(key: "creationDate", ascending: false)
         fetchRequest.sortDescriptors = [sortDescriptorCreationDate]
         
-        var hands: [Shoe]?
+        var shoes: [Shoe]?
         
         do {
             let fetchObjects = try context.fetch(fetchRequest)
-            hands = [Shoe(data: fetchObjects)]
+            shoes = [Shoe(data: fetchObjects)]
         } catch {
             fatalError("Error fetching hands ")
         }
-        sections = hands ?? []
+        sections = shoes ?? []
     }
 }
