@@ -1,28 +1,32 @@
 //
-//  MainViewController.swift
+//  HorizontalViewController.swift
 //  GenericDataSource
 //
-//  Created by Jonni Akesson on 2022-02-02.
+//  Created by Jonni Akesson on 2022-02-03.
 //
 
 import UIKit
 
-class MainViewController: UIViewController {
+class HorizontalViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    private var dataSource: GenericCollectionViewDiffableDataSource<Shoe, Hand>!
-    private var modelController: ModelController!
+    private var dataSource: GenericCollectionViewDiffableDataSource<Shoe, Hand>! = nil
+    var modelController: ModelController! = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        modelController = ModelController()
         modelController.fetchData()
         configureDataSource()
         
-        let collectionViewLayout = HorizontalCompositionalLayout(itemPerRow: 6, contentInsets: 2)
+        let collectionViewLayout = VerticalCompositionalLayout(itemPerRow: 6, contentInsets: 2)
         collectionView.collectionViewLayout = collectionViewLayout
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        dataSource.update(animatingDifferences: false)
     }
     
     private func configureDataSource() {
