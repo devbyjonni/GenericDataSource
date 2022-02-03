@@ -16,11 +16,11 @@ class ModelController: ModelControllerProtocol {
     
     private var coreDataManager = CoreDataManager.shared
     
-    var sections: [Hands] = []
+    var sections: [Shoe] = []
     
     var didUpdateData: Bool = false {
         didSet {
-             print("*** Did Add Data ***")
+             print("*** Did Update Data ***")
         }
     }
     
@@ -30,7 +30,7 @@ class ModelController: ModelControllerProtocol {
         let hand = sections[sectionCount - 1].data.removeLast()
         coreDataManager.persistentContainer.viewContext.delete(hand)
         coreDataManager.saveContext()
-        didUpdateData = false
+        didUpdateData = true
     }
     
     func createItem() {
@@ -39,7 +39,7 @@ class ModelController: ModelControllerProtocol {
         hand.title = String(Int.random(in: 0...100))
         coreDataManager.saveContext()
         sections[sections.count - 1].data.append(hand)
-        didUpdateData = false
+        didUpdateData = true
     }
     
     func fetchData()  {
@@ -49,11 +49,11 @@ class ModelController: ModelControllerProtocol {
         let sortDescriptorCreationDate = NSSortDescriptor(key: "creationDate", ascending: false)
         fetchRequest.sortDescriptors = [sortDescriptorCreationDate]
         
-        var hands: [Hands]?
+        var hands: [Shoe]?
         
         do {
             let fetchObjects = try context.fetch(fetchRequest)
-            hands = [Hands(data: fetchObjects)]
+            hands = [Shoe(data: fetchObjects)]
         } catch {
             fatalError("Error fetching hands ")
         }

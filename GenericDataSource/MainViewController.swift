@@ -11,7 +11,7 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    private var dataSource: GenericCollectionViewDiffableDataSource<Hands, Hand>!
+    private var dataSource: GenericCollectionViewDiffableDataSource<Shoe, Hand>!
     private var modelController: ModelController!
     
     override func viewDidLoad() {

@@ -27,12 +27,16 @@ extension ModelProtocol {
     }
 }
 
-protocol SectionProtocol: ModelProtocol { }
+protocol SectionProtocol: ModelProtocol {
+    associatedtype DataType
+    var data: [DataType] { get }
+    init(data: [DataType])
+}
 
-class Hands: SectionProtocol {
+class Shoe: SectionProtocol {
     var data: [Hand]
     
-    init(data: [Hand]) {
+    required init(data: [Hand]) {
         self.data = data
     }
 }

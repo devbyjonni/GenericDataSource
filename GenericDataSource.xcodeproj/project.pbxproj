@@ -20,7 +20,7 @@
 		FA99AD2027AC5EA7009A6CE0 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99AD1F27AC5EA7009A6CE0 /* CoreDataManager.swift */; };
 		FA99AD2227AC6069009A6CE0 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99AD2127AC6069009A6CE0 /* ModelController.swift */; };
 		FA99AD2427AC613D009A6CE0 /* GenericCollectionViewDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99AD2327AC613D009A6CE0 /* GenericCollectionViewDiffableDataSource.swift */; };
-		FA99AD2627AC627E009A6CE0 /* Hands.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99AD2527AC627E009A6CE0 /* Hands.swift */; };
+		FA99AD2627AC627E009A6CE0 /* Shoe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99AD2527AC627E009A6CE0 /* Shoe.swift */; };
 		FA99AD2827AC631B009A6CE0 /* HorizontalCompositionalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99AD2727AC631B009A6CE0 /* HorizontalCompositionalLayout.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +40,7 @@
 		FA99AD1F27AC5EA7009A6CE0 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		FA99AD2127AC6069009A6CE0 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		FA99AD2327AC613D009A6CE0 /* GenericCollectionViewDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCollectionViewDiffableDataSource.swift; sourceTree = "<group>"; };
-		FA99AD2527AC627E009A6CE0 /* Hands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hands.swift; sourceTree = "<group>"; };
+		FA99AD2527AC627E009A6CE0 /* Shoe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shoe.swift; sourceTree = "<group>"; };
 		FA99AD2727AC631B009A6CE0 /* HorizontalCompositionalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCompositionalLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,7 +103,7 @@
 			children = (
 				FA2A227E27AA1985001893C1 /* Hand+CoreDataClass.swift */,
 				FA2A227F27AA1985001893C1 /* Hand+CoreDataProperties.swift */,
-				FA99AD2527AC627E009A6CE0 /* Hands.swift */,
+				FA99AD2527AC627E009A6CE0 /* Shoe.swift */,
 				FA99AD1F27AC5EA7009A6CE0 /* CoreDataManager.swift */,
 				FA2A226927AA0D3A001893C1 /* GenericDataSource.xcdatamodeld */,
 			);
@@ -191,7 +191,7 @@
 				FA99AD2827AC631B009A6CE0 /* HorizontalCompositionalLayout.swift in Sources */,
 				FA99AD2027AC5EA7009A6CE0 /* CoreDataManager.swift in Sources */,
 				FA99AD2427AC613D009A6CE0 /* GenericCollectionViewDiffableDataSource.swift in Sources */,
-				FA99AD2627AC627E009A6CE0 /* Hands.swift in Sources */,
+				FA99AD2627AC627E009A6CE0 /* Shoe.swift in Sources */,
 				FA2A228127AA1985001893C1 /* Hand+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
