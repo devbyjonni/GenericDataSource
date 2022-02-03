@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8iH-yM-LF5">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="landscape" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -14,11 +14,11 @@
             <objects>
                 <viewController id="DgX-MI-pQL" customClass="VerticalViewController" customModule="GenericDataSource" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gBe-O3-Eyd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fID-uf-2NZ">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="44" y="44" width="808" height="300"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Q74-or-U9S">
                                     <size key="itemSize" width="128" height="128"/>
@@ -87,11 +87,11 @@
             <objects>
                 <viewController id="QtR-p2-Oxx" customClass="HorizontalViewController" customModule="GenericDataSource" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Iz4-Hl-omF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gkZ-6m-lBl">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gkZ-6m-lBl">
+                                <rect key="frame" x="44" y="44" width="808" height="300"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nj7-B1-qtd">
                                     <size key="itemSize" width="128" height="128"/>
@@ -131,7 +131,7 @@
                         <constraints>
                             <constraint firstItem="gkZ-6m-lBl" firstAttribute="leading" secondItem="KT8-4b-cTf" secondAttribute="leading" id="Y2b-rL-SBL"/>
                             <constraint firstItem="gkZ-6m-lBl" firstAttribute="top" secondItem="KT8-4b-cTf" secondAttribute="top" id="ZRU-fz-3pP"/>
-                            <constraint firstAttribute="bottom" secondItem="gkZ-6m-lBl" secondAttribute="bottom" id="lzz-hf-Ycf"/>
+                            <constraint firstAttribute="bottom" secondItem="gkZ-6m-lBl" secondAttribute="bottom" constant="70" id="lzz-hf-Ycf"/>
                             <constraint firstItem="gkZ-6m-lBl" firstAttribute="trailing" secondItem="KT8-4b-cTf" secondAttribute="trailing" id="qPr-0m-pVR"/>
                         </constraints>
                     </view>
@@ -153,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cTH-wV-Xvb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2080" y="800"/>
+            <point key="canvasLocation" x="2079.2410714285716" y="798.55072463768124"/>
         </scene>
         <!--Vertical-->
         <scene sceneID="NpW-JP-djc">
@@ -162,7 +162,7 @@
                     <tabBarItem key="tabBarItem" title="Vertical" image="rectangle.grid.2x2" catalog="system" selectedImage="rectangle.grid.2x2.fill" id="yCy-wE-OCE"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jfM-6g-C9y">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -199,7 +199,7 @@
                     <tabBarItem key="tabBarItem" title="Horizontal" image="rectangle.grid.2x2" catalog="system" selectedImage="rectangle.grid.2x2.fill" id="xhL-7l-bvh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TKB-Dl-9uM">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -209,7 +209,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cc8-Zw-8JC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1151" y="800"/>
+            <point key="canvasLocation" x="1161" y="886"/>
         </scene>
     </scenes>
     <resources>
